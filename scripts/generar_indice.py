@@ -328,7 +328,7 @@ def renumerar_categorias(ruta_raiz):
 
 
 EXCLUIDAS = (
-    ["00.Workflow_SYSTEM", "000.A_Definir"]
+    ["scripts", "sala_de_juegos", "000.A_Definir"]
     + list(CATEGORIAS.keys())
     + ["__pycache__", ".ruff_cache", ".git"]
 )
@@ -454,5 +454,10 @@ def organizar_y_indexar(ruta_raiz):
 
 
 if __name__ == "__main__":
-    ruta = r"C:\Users\Usuario\Desktop\La_Orga\MarkDown"
+    import os
+
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    raiz = os.path.dirname(script_dir)  # MarkDown/
+    os.chdir(script_dir)  # Trabajar desde scripts/
+    ruta = script_dir
     organizar_y_indexar(ruta)
