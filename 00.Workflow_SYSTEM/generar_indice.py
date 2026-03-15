@@ -273,12 +273,28 @@ CATEGORIAS = {
 }
 
 
-def clasificar_carpeta(nombre):
+def clasificar_carpeta(nombre, ruta_raiz):
     nombre_lower = nombre.lower()
+
+    # Buscar en categorías existentes
     for categoria, keywords in CATEGORIAS.items():
         for kw in keywords:
             if kw in nombre_lower:
                 return categoria
+
+    # Si no coincide, crear nueva categoría basada en palabras del nombre
+    palabras = re.findall(r"[a-zA-Z]+", nombre_lower)
+    for palabra in palabras:
+        if len(palabra) > 3:
+            nueva_cat = f"18_{palabra.title().replace('_', '')}"
+            ruta_nueva_cat = os.path.join(ruta_raiz, nueva_cat)
+            if not os.path.exists(ruta_nueva_cat):
+                os.makedirs(ruta_nueva_cat)
+                print(f"Creada nueva categoria: {nueva_cat}")
+                # Agregar al diccionario para siguientes archivos
+                CATEGORIAS[nueva_cat] = [palabra]
+                return nueva_cat
+
     return "000.A_Definir"
 
 
@@ -363,7 +379,7 @@ def organizar_y_indexar(ruta_raiz):
 
             ruta_antigua = os.path.join(origen, nombre_original)
 
-            categoria = clasificar_carpeta(nombre_original)
+            categoria = clasificar_carpeta(nombre_original, ruta_raiz)
             ruta_categoria = os.path.join(ruta_raiz, categoria)
 
             if not os.path.exists(ruta_categoria):

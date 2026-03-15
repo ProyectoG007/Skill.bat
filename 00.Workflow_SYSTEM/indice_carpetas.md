@@ -1,5 +1,5 @@
 # Indice de Carpetas - La Orga
-# Actualizado: 2026-03-15 10:00
+# Actualizado: 2026-03-15 10:38
 
 | Categoria | N | Carpeta | Descripcion |
 |---|---|---|---|
@@ -42,10 +42,11 @@
 | 06_Video_Audio | 04 | 04. video-transcript-downloader-1.0.0 | --- |
 | 06_Video_Audio | 05 | 05. youtube-transcript-1.0.1 | --- |
 | 07_Design_Creative | 01 | 01. ai-ppt-generator-1.1.3 | --- |
-| 07_Design_Creative | 02 | 02. beauty-generation-api-1.2.42 | --- |
-| 07_Design_Creative | 03 | 03. frontend-design-ultimate-1.0.0 | --- |
-| 07_Design_Creative | 04 | 04. nano-banana-pro-1.0.1 | --- |
-| 07_Design_Creative | 05 | 05. superdesign-1.0.0 | --- |
+| 07_Design_Creative | 02 | 02. test_frontend_new | --- |
+| 07_Design_Creative | 03 | 03. beauty-generation-api-1.2.42 | --- |
+| 07_Design_Creative | 04 | 04. frontend-design-ultimate-1.0.0 | --- |
+| 07_Design_Creative | 05 | 05. nano-banana-pro-1.0.1 | --- |
+| 07_Design_Creative | 06 | 06. superdesign-1.0.0 | --- |
 | 08_Automation | 01 | 01. command-center-1.4.1 | --- |
 | 08_Automation | 02 | 02. computer-use-1.2.1 | --- |
 | 08_Automation | 03 | 03. fast-browser-use-1.0.5 | --- |
@@ -74,3 +75,4 @@
 | 15_Obsidian | 01 | 01. obsidian-1.0.0 | --- |
 | 16_Prompt_Engineering | 01 | 01. prompt-engineering-expert-1.0.0 | --- |
 | 17_SQL | 01 | 01. sql-toolkit-1.0.0 | --- |
+| 18_Zebra | 01 | 01. zebra_skill | --- |

@@ -65,6 +65,9 @@ MarkDown/
 | 15 | Obsidian | Obsidian |
 | 16 | Prompt_Engineering | Prompt Engineering |
 | 17 | SQL | SQL |
+| 18+ | (auto) | Categorías creadas dinámicamente |
+
+> **Nota:** Las categorías 18+ se crean automáticamente si el skill no coincide con ninguna categoría existente.
 
 ## Configuración
 

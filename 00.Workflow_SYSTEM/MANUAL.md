@@ -41,9 +41,12 @@ Para encontrar un skill:
 
 ### ¿Qué pasa si no se clasifica correctamente?
 
-El skill irá a `000.A_Definir/`. Podés:
-- Modificar el nombre del folder para que coincida con palabras clave
-- Clasificarlo manualmente moviendo la carpeta
+El sistema intentará crear una nueva categoría automáticamente:
+- Extrae palabras del nombre del skill (más de 3 letras)
+- Crea una carpeta `18_NuevaPalabra` si no existe
+- Si no puede clasificar, va a `000.A_Definir/`
+
+Ejemplo: `zebra_skill` → crea carpeta `18_Zebra`
 
 ### ¿Cómo funciona la clasificación automática?
 
