@@ -1,5 +1,6 @@
 import os
 import re
+import shutil
 
 os.chdir("scripts")
 
@@ -163,6 +164,9 @@ if os.path.exists(ruta_a_definir):
             ruta_destino = os.path.join(ruta_cat, f"01. {nombre}")
 
             if os.path.exists(ruta_origen):
+                # Si ya existe destino, eliminarlo primero
+                if os.path.exists(ruta_destino):
+                    shutil.rmtree(ruta_destino)
                 os.rename(ruta_origen, ruta_destino)
                 resultados.append(f"{nombre} -> {categoria}")
                 print(f"    {nombre} -> {categoria}")
@@ -177,8 +181,6 @@ if os.path.exists(ruta_a_definir):
 else:
     print("  Carpeta 000.A_Definir no existe.")
     open("../resultado_proceso.txt", "w", encoding="utf-8").write("Total: 0\n")
-
-import shutil
 
 for cat in CATEGORIAS.keys():
     ruta_cat = os.path.join("scripts", cat)
