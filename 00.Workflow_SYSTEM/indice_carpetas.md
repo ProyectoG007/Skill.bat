@@ -1,5 +1,5 @@
 # Indice de Carpetas - La Orga
-# Actualizado: 2026-03-15 11:16
+# Actualizado: 2026-03-15 11:25
 
 | Categoria | N | Carpeta | Descripcion |
 |---|---|---|---|
@@ -40,10 +40,11 @@
 | 05_Dev_Tools | 08 | 08. playwright-1.0.3 | --- |
 | 05_Dev_Tools | 09 | 09. tdd-guide-2.1.1 | --- |
 | 06_Video_Audio | 01 | 01. fathom-reunion-api-1.0.5 | --- |
-| 06_Video_Audio | 02 | 02. retake-tv-agent-2.1.2 | --- |
-| 06_Video_Audio | 03 | 03. video-subtitles-1.0.0 | --- |
-| 06_Video_Audio | 04 | 04. video-transcript-downloader-1.0.0 | --- |
-| 06_Video_Audio | 05 | 05. youtube-transcript-1.0.1 | --- |
+| 06_Video_Audio | 02 | 02. wed-1-0-1-1.0.0 | --- |
+| 06_Video_Audio | 03 | 03. retake-tv-agent-2.1.2 | --- |
+| 06_Video_Audio | 04 | 04. video-subtitles-1.0.0 | --- |
+| 06_Video_Audio | 05 | 05. video-transcript-downloader-1.0.0 | --- |
+| 06_Video_Audio | 06 | 06. youtube-transcript-1.0.1 | --- |
 | 07_Design_Creative | 01 | 01. ai-ppt-generator-1.1.3 | --- |
 | 07_Design_Creative | 02 | 02. test_frontend_new | --- |
 | 07_Design_Creative | 03 | 03. beauty-generation-api-1.2.42 | --- |

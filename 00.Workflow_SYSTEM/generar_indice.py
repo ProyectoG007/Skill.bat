@@ -270,6 +270,7 @@ CATEGORIAS = {
     "15_Obsidian": ["obsidian", "vault"],
     "16_Prompt_Engineering": ["prompt", "engineering"],
     "17_SQL": ["sql", "query"],
+    "06_Video_Audio": ["video", "audio", "wed", "remotion"],
 }
 
 
@@ -285,7 +286,7 @@ def clasificar_carpeta(nombre, ruta_raiz):
     # Si no coincide, crear nueva categoría basada en palabras del nombre
     palabras = re.findall(r"[a-zA-Z]+", nombre_lower)
     for palabra in palabras:
-        if len(palabra) > 3:
+        if len(palabra) >= 2:
             nueva_cat = f"18_{palabra.title().replace('_', '')}"
             ruta_nueva_cat = os.path.join(ruta_raiz, nueva_cat)
             if not os.path.exists(ruta_nueva_cat):
