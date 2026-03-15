@@ -2,4 +2,4 @@
 
 | N° | Carpeta | Explicación | Tecnologías |
 |---|---|---|---|
-| 01 | **01. wed-1-0-1-1.0.0** | --- | .json, .md |
+| 01 | **01. 18_Edge** | Contiene subcarpetas u otros elementos. | .js, .json, .md, .sh |

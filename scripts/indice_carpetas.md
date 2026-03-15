@@ -1,5 +1,5 @@
 # Indice de Carpetas - La Orga
-# Actualizado: 2026-03-15 11:25
+# Actualizado: 2026-03-15 12:09
 
 | Categoria | N | Carpeta | Descripcion |
 |---|---|---|---|
@@ -16,10 +16,11 @@
 | 02_Marketing_Sales | 02 | 02. creador_pdf | --- |
 | 02_Marketing_Sales | 03 | 03. content-creator-2.1.1 | --- |
 | 02_Marketing_Sales | 04 | 04. data-analysis-1.0.2 | --- |
-| 02_Marketing_Sales | 05 | 05. hzl-3.1.0 | --- |
-| 02_Marketing_Sales | 06 | 06. marketing-strategy-pmm-2.1.1 | --- |
-| 02_Marketing_Sales | 07 | 07. market-research-1.0.1 | --- |
-| 02_Marketing_Sales | 08 | 08. productivity-1.0.4 | --- |
+| 02_Marketing_Sales | 05 | 05. marketing-skills-0.1.2 | --- |
+| 02_Marketing_Sales | 06 | 06. hzl-3.1.0 | --- |
+| 02_Marketing_Sales | 07 | 07. marketing-strategy-pmm-2.1.1 | --- |
+| 02_Marketing_Sales | 08 | 08. market-research-1.0.1 | --- |
+| 02_Marketing_Sales | 09 | 09. productivity-1.0.4 | --- |
 | 03_Trading_Finance | 01 | 01. risk-management-specialist-2.1.1 | --- |
 | 03_Trading_Finance | 02 | 02. tushare-trading-1.0.8 | --- |
 | 03_Trading_Finance | 03 | 03. us-stock-analysis-0.1.1 | --- |
@@ -53,12 +54,11 @@
 | 07_Design_Creative | 06 | 06. superdesign-1.0.0 | --- |
 | 08_Automation | 01 | 01. command-center-1.4.1 | --- |
 | 08_Automation | 02 | 02. computer-use-1.2.1 | --- |
-| 08_Automation | 03 | 03. fast-browser-use-1.0.5 | --- |
-| 08_Automation | 04 | 04. fast-io-1.121.0 | --- |
-| 08_Automation | 05 | 05. multi-search-engine-2.0.1 | --- |
-| 08_Automation | 06 | 06. n8n-2.0.0 | --- |
-| 08_Automation | 07 | 07. proactive-agent-3.1.0 | --- |
-| 08_Automation | 08 | 08. screenshot-1.0.1 | --- |
+| 08_Automation | 03 | 03. fast-io-1.121.0 | --- |
+| 08_Automation | 04 | 04. multi-search-engine-2.0.1 | --- |
+| 08_Automation | 05 | 05. n8n-2.0.0 | --- |
+| 08_Automation | 06 | 06. proactive-agent-3.1.0 | --- |
+| 08_Automation | 07 | 07. screenshot-1.0.1 | --- |
 | 09_OCR_Docs | 01 | 01. excel-xlsx-1.0.2 (1) | --- |
 | 09_OCR_Docs | 02 | 02. excel-xlsx-1.0.2 | --- |
 | 09_OCR_Docs | 03 | 03. paddleocr-doc-parsing-2.0.7 | --- |
@@ -67,6 +67,7 @@
 | 10_Security | 03 | 03. openclaw-agent-auditor-optimize-1.2.1 | --- |
 | 10_Security | 04 | 04. verified-agent-identity-0.0.15 | --- |
 | 11_Home_IoT | 01 | 01. homekit-1.0.5 | --- |
+| 11_Home_IoT | 02 | 02. home-assistant-1.0.0 | --- |
 | 12_Research | 01 | 01. academic-deep-research-1.0.0 | --- |
 | 12_Research | 02 | 02. content-id-guide-1.0.3 | --- |
 | 12_Research | 03 | 03. content-id-guide-1.0.3 (1) | --- |

@@ -334,6 +334,36 @@ EXCLUIDAS = (
 )
 
 
+def renumerar_categorias(ruta_raiz):
+    """Renumera carpetas dentro de cada categoría"""
+    categorias = [
+        d
+        for d in os.listdir(ruta_raiz)
+        if os.path.isdir(os.path.join(ruta_raiz, d))
+        and (d.startswith("0") or d.startswith("1"))
+        and d not in EXCLUIDAS
+    ]
+
+    for cat in categorias:
+        ruta_cat = os.path.join(ruta_raiz, cat)
+        items = sorted(
+            [
+                d
+                for d in os.listdir(ruta_cat)
+                if os.path.isdir(os.path.join(ruta_cat, d))
+            ]
+        )
+
+        for i, item in enumerate(items, 1):
+            # Limpiar cualquier número viejo y renumerar
+            nombre_limpio = re.sub(r"^\d+\.\s*", "", item)
+            nuevo_nombre = f"{i:02d}. {nombre_limpio}"
+            ruta_vieja = os.path.join(ruta_cat, item)
+            ruta_nueva = os.path.join(ruta_cat, nuevo_nombre)
+            if ruta_vieja != ruta_nueva:
+                os.rename(ruta_vieja, ruta_nueva)
+
+
 def organizar_y_indexar(ruta_raiz):
     try:
         os.chdir(ruta_raiz)
