@@ -339,6 +339,8 @@ def organizar_y_indexar(ruta_raiz):
 
         # Primero buscar en 000.A_Definir
         ruta_a_definir = os.path.join(ruta_raiz, "000.A_Definir")
+        items = []
+
         if os.path.exists(ruta_a_definir):
             items = [
                 d
@@ -350,8 +352,9 @@ def organizar_y_indexar(ruta_raiz):
             ]
             if items:
                 print(f"Procesando {len(items)} carpetas de 000.A_Definir...")
-        else:
-            # Buscar en raíz (comportamiento original)
+
+        # Si no hay en 000.A_Definir, buscar en raíz
+        if not items:
             items = [
                 d
                 for d in os.listdir()
@@ -360,6 +363,8 @@ def organizar_y_indexar(ruta_raiz):
                 and not d.startswith(".")
                 and d not in EXCLUIDAS
             ]
+            if items:
+                print(f"Procesando {len(items)} carpetas de raíz...")
 
         if not items:
             print("No hay carpetas nuevas para procesar.")
@@ -368,7 +373,19 @@ def organizar_y_indexar(ruta_raiz):
         print(f"Procesando {len(items)} carpetas...")
 
         # Determinar ruta de origen
-        origen = ruta_a_definir if "ruta_a_definir" in locals() and items else ruta_raiz
+        origen = ruta_raiz  # Default: raíz
+        if os.path.exists(ruta_a_definir):
+            items_a_definir = [
+                d
+                for d in os.listdir(ruta_a_definir)
+                if os.path.isdir(os.path.join(ruta_a_definir, d))
+                and not re.match(r"^\d+\.", d)
+                and not d.startswith(".")
+                and d not in EXCLUIDAS
+            ]
+            if items_a_definir:
+                origen = ruta_a_definir
+                items = items_a_definir
 
         datos_indice = []
         items_data = []
