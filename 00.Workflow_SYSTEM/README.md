@@ -55,3 +55,8 @@ ZIP arrives → 000.A_Definir/ → ejecutar procesar.bat →
 - Carpetas ocultas (empezando con .) se ignoran
 - Se extrae descripción de _meta.json, package.json, skill.json
 - El índice se guarda en `00.Workflow_SYSTEM/indice_carpetas.md`
+
+## Documentación
+
+- [MANUAL.md](./MANUAL.md) - Guía de usuario detallada
+- [README.md](../README.md) - README principal del proyecto
