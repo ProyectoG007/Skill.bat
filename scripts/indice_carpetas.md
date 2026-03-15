@@ -1,5 +1,5 @@
 # Indice de Carpetas - La Orga
-# Actualizado: 2026-03-15 12:09
+# Actualizado: 2026-03-15 12:25
 
 | Categoria | N | Carpeta | Descripcion |
 |---|---|---|---|
@@ -14,6 +14,7 @@
 | 01_API_Services | 09 | 09. telegram-1.0.1 | --- |
 | 02_Marketing_Sales | 01 | 01. adclaw-1.0.10 | --- |
 | 02_Marketing_Sales | 02 | 02. creador_pdf | --- |
+| 02_Marketing_Sales | 02 | 02. marketing-skills-0.1.2 | --- |
 | 02_Marketing_Sales | 03 | 03. content-creator-2.1.1 | --- |
 | 02_Marketing_Sales | 04 | 04. data-analysis-1.0.2 | --- |
 | 02_Marketing_Sales | 05 | 05. marketing-skills-0.1.2 | --- |
@@ -66,6 +67,7 @@
 | 10_Security | 02 | 02. moltguard-6.8.16 | --- |
 | 10_Security | 03 | 03. openclaw-agent-auditor-optimize-1.2.1 | --- |
 | 10_Security | 04 | 04. verified-agent-identity-0.0.15 | --- |
+| 11_Home_IoT | 01 | 01. home-assistant-1.0.0 | --- |
 | 11_Home_IoT | 01 | 01. homekit-1.0.5 | --- |
 | 11_Home_IoT | 02 | 02. home-assistant-1.0.0 | --- |
 | 12_Research | 01 | 01. academic-deep-research-1.0.0 | --- |
