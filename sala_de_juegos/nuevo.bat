@@ -25,10 +25,9 @@ echo [10] 10_Security
 echo [11] 11_Home_IoT
 echo [12] 12_Research
 echo [13] 13_Browser_Agents
-echo [14] 14_Oracle_DB
-echo [15] 15_Obsidian
-echo [16] 16_Prompt_Engineering
-echo [17] 17_SQL
+echo [14] 15_Obsidian
+echo [15] 16_Prompt_Engineering
+echo [16] 17_SQL
 echo.
 echo  [0] Salir
 echo.
@@ -49,10 +48,9 @@ if "%CATEG%"=="10" set CARPETA=10_Security
 if "%CATEG%"=="11" set CARPETA=11_Home_IoT
 if "%CATEG%"=="12" set CARPETA=12_Research
 if "%CATEG%"=="13" set CARPETA=13_Browser_Agents
-if "%CATEG%"=="14" set CARPETA=14_Oracle_DB
-if "%CATEG%"=="15" set CARPETA=15_Obsidian
-if "%CATEG%"=="16" set CARPETA=16_Prompt_Engineering
-if "%CATEG%"=="17" set CARPETA=17_SQL
+if "%CATEG%"=="14" set CARPETA=15_Obsidian
+if "%CATEG%"=="15" set CARPETA=16_Prompt_Engineering
+if "%CATEG%"=="16" set CARPETA=17_SQL
 
 if not defined CARPETA goto main
 
