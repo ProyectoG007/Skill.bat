@@ -320,20 +320,39 @@ EXCLUIDAS = (
 def organizar_y_indexar(ruta_raiz):
     try:
         os.chdir(ruta_raiz)
-        items = [
-            d
-            for d in os.listdir()
-            if os.path.isdir(d)
-            and not re.match(r"^\d+\.", d)
-            and not d.startswith(".")
-            and d not in EXCLUIDAS
-        ]
+
+        # Primero buscar en 000.A_Definir
+        ruta_a_definir = os.path.join(ruta_raiz, "000.A_Definir")
+        if os.path.exists(ruta_a_definir):
+            items = [
+                d
+                for d in os.listdir(ruta_a_definir)
+                if os.path.isdir(os.path.join(ruta_a_definir, d))
+                and not re.match(r"^\d+\.", d)
+                and not d.startswith(".")
+                and d not in EXCLUIDAS
+            ]
+            if items:
+                print(f"Procesando {len(items)} carpetas de 000.A_Definir...")
+        else:
+            # Buscar en raíz (comportamiento original)
+            items = [
+                d
+                for d in os.listdir()
+                if os.path.isdir(d)
+                and not re.match(r"^\d+\.", d)
+                and not d.startswith(".")
+                and d not in EXCLUIDAS
+            ]
 
         if not items:
             print("No hay carpetas nuevas para procesar.")
             return
 
         print(f"Procesando {len(items)} carpetas...")
+
+        # Determinar ruta de origen
+        origen = ruta_a_definir if "ruta_a_definir" in locals() and items else ruta_raiz
 
         datos_indice = []
         items_data = []
@@ -342,7 +361,7 @@ def organizar_y_indexar(ruta_raiz):
             numero_str = f"{i:02d}"
             nuevo_nombre = f"{numero_str}. {nombre_original}"
 
-            ruta_antigua = os.path.join(ruta_raiz, nombre_original)
+            ruta_antigua = os.path.join(origen, nombre_original)
 
             categoria = clasificar_carpeta(nombre_original)
             ruta_categoria = os.path.join(ruta_raiz, categoria)

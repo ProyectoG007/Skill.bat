@@ -7,11 +7,11 @@ echo   LA ORGA - PROCESAMIENTO DE CARPETAS
 echo ========================================
 echo.
 
-echo [1/4] Procesando carpetas nuevas...
+echo [1/3] Procesando carpetas nuevas...
 python "00.Workflow_SYSTEM\generar_indice.py"
 
 echo.
-echo [2/4] Actualizando indice de carpetas...
+echo [2/3] Actualizando indice de carpetas...
 python -c "
 import os
 import json
@@ -42,16 +42,12 @@ print('Indice actualizado!')
 "
 
 echo.
-echo [3/4] Listado de carpetas por categoria:
+echo [3/3] Resumen de carpetas por categoria:
 for /d %%d in (0*) do (
     if not "%%d"=="00.Workflow_SYSTEM" if not "%%d"=="000.A_Definir" (
         echo   %%d
     )
 )
-
-echo.
-echo [4/4] RESULTADO:
-type "00.Workflow_SYSTEM\indice_carpetas.md"
 
 echo.
 echo ========================================
