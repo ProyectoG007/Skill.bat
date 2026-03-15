@@ -7,11 +7,39 @@ echo   LA ORGA - PROCESAMIENTO DE CARPETAS
 echo ========================================
 echo.
 
-echo [1/3] Procesando carpetas nuevas...
+echo [1/4] Descomprimiendo ZIPs en 000.A_Definir...
+python -c "
+import os
+import zipfile
+
+ruta = '000.A_Definir'
+if os.path.exists(ruta):
+    os.chdir(ruta)
+    archivos = [f for f in os.listdir('.') if f.endswith('.zip')]
+    if archivos:
+        for archivo in archivos:
+            nombre_carpeta = archivo[:-4]
+            try:
+                print(f'  Descomprimiendo: {archivo}')
+                with zipfile.ZipFile(archivo, 'r') as zip_ref:
+                    os.makedirs(nombre_carpeta, exist_ok=True)
+                    zip_ref.extractall(nombre_carpeta)
+                os.remove(archivo)
+                print(f'  Listo: {archivo} -> {nombre_carpeta}')
+            except Exception as e:
+                print(f'  Error: {archivo} - {e}')
+    else:
+        print('  No hay ZIPs para descomprimir.')
+else:
+    print('  Carpeta 000.A_Definir no existe.')
+"
+
+echo.
+echo [2/4] Procesando carpetas nuevas...
 python "00.Workflow_SYSTEM\generar_indice.py"
 
 echo.
-echo [2/3] Actualizando indice de carpetas...
+echo [3/4] Actualizando indice de carpetas...
 python -c "
 import os
 import json
@@ -42,7 +70,7 @@ print('Indice actualizado!')
 "
 
 echo.
-echo [3/3] Resumen de carpetas por categoria:
+echo [4/4] Resumen de carpetas por categoria:
 for /d %%d in (0*) do (
     if not "%%d"=="00.Workflow_SYSTEM" if not "%%d"=="000.A_Definir" (
         echo   %%d

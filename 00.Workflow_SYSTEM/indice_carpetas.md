@@ -1,5 +1,5 @@
 # Indice de Carpetas - La Orga
-# Actualizado: 2026-03-15 10:38
+# Actualizado: 2026-03-15 10:58
 
 | Categoria | N | Carpeta | Descripcion |
 |---|---|---|---|
@@ -23,19 +23,22 @@
 | 03_Trading_Finance | 01 | 01. risk-management-specialist-2.1.1 | --- |
 | 03_Trading_Finance | 02 | 02. tushare-trading-1.0.8 | --- |
 | 03_Trading_Finance | 03 | 03. us-stock-analysis-0.1.1 | --- |
-| 04_AI_ML | 01 | 01. humanizer-1.0.0 | --- |
-| 04_AI_ML | 02 | 02. memory-hygiene-1.0.0 | --- |
-| 04_AI_ML | 03 | 03. self-improving-1.2.16 | --- |
-| 04_AI_ML | 04 | 04. self-improving-agent-3.0.2 | --- |
-| 04_AI_ML | 05 | 05. senior-ml-engineer-2.1.1 | --- |
+| 03_Trading_Finance | 04 | 04. yahoo-finance-1.0.0 | --- |
+| 04_AI_ML | 01 | 01. agent-memory-1.0.0 | --- |
+| 04_AI_ML | 02 | 02. humanizer-1.0.0 | --- |
+| 04_AI_ML | 03 | 03. memory-hygiene-1.0.0 | --- |
+| 04_AI_ML | 04 | 04. self-improving-1.2.16 | --- |
+| 04_AI_ML | 05 | 05. self-improving-agent-3.0.2 | --- |
+| 04_AI_ML | 06 | 06. senior-ml-engineer-2.1.1 | --- |
 | 05_Dev_Tools | 01 | 01. cursor-agent-2.1.0 | --- |
 | 05_Dev_Tools | 02 | 02. docker-1.0.4 | --- |
-| 05_Dev_Tools | 03 | 03. git-1.0.8 | --- |
-| 05_Dev_Tools | 04 | 04. github-1.0.0 | --- |
-| 05_Dev_Tools | 05 | 05. gitlab-cli-skills-1.11.0 | --- |
-| 05_Dev_Tools | 06 | 06. mcporter-1.0.0 | --- |
-| 05_Dev_Tools | 07 | 07. playwright-1.0.3 | --- |
-| 05_Dev_Tools | 08 | 08. tdd-guide-2.1.1 | --- |
+| 05_Dev_Tools | 03 | 03. remotion-video-toolkit-1.4.0 | --- |
+| 05_Dev_Tools | 04 | 04. git-1.0.8 | --- |
+| 05_Dev_Tools | 05 | 05. github-1.0.0 | --- |
+| 05_Dev_Tools | 06 | 06. gitlab-cli-skills-1.11.0 | --- |
+| 05_Dev_Tools | 07 | 07. mcporter-1.0.0 | --- |
+| 05_Dev_Tools | 08 | 08. playwright-1.0.3 | --- |
+| 05_Dev_Tools | 09 | 09. tdd-guide-2.1.1 | --- |
 | 06_Video_Audio | 01 | 01. fathom-reunion-api-1.0.5 | --- |
 | 06_Video_Audio | 02 | 02. retake-tv-agent-2.1.2 | --- |
 | 06_Video_Audio | 03 | 03. video-subtitles-1.0.0 | --- |
@@ -75,4 +78,3 @@
 | 15_Obsidian | 01 | 01. obsidian-1.0.0 | --- |
 | 16_Prompt_Engineering | 01 | 01. prompt-engineering-expert-1.0.0 | --- |
 | 17_SQL | 01 | 01. sql-toolkit-1.0.0 | --- |
-| 18_Zebra | 01 | 01. zebra_skill | --- |
